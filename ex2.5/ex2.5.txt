@@ -1,0 +1,29 @@
+Exercise 2.5: Determine the type of each of the following literals. Explain
+the differences among the literals in each of the four examples: 
+(a) 'a', L'a', "a", L"a"
+(b) 10, 10u, 10L, 10uL, 012, 0xC
+(c) 3.14, 3.14f, 3.14L
+(d) 10, 10u, 10., 10e-2
+
+
+(a) 
+    'a' is const char, 
+    L'a' is const wchar_t
+    "a" is a string meaning an array containing char 'a' and char '\0' and returns a char* to 'a'
+    L"a" the same as above but instead of char's they are wchar_t
+(b) 
+    10 is int 
+    10u is unsigned int 
+    10L is long
+    10uL is unsigned long 
+    012 is int in octal 12 or 10 in decimal 
+    0xC is int in hex or 12 in decimal
+(c) 
+    3.14 is double
+    3.14f is float
+    3.14L is long double
+(d) 
+    10 is int
+    10u is unsigned int
+    10. is double
+    10e-2 is double

@@ -1,0 +1,10 @@
+Exercise 2.16: Which, if any, of the following assignments are invalid? If they are valid, 
+explain what they do. 
+
+int i = 0, &r1 = i; 
+double d = 0, &r2 = d; 
+
+(a) r2 = 3.14159; valid same as d=3.14159
+(b) r2 = r1; valid same as d = i; no loss of precision
+(c) i = r2; valid same as i = d; int just drops decimal
+(d) r1 = d; valid same as i = d; int just drops decimal

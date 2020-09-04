@@ -1,0 +1,18 @@
+Exercise 2.9: Explain the following definitions. For those that are illegal,
+explain what’s wrong and how to correct it.
+(a) std::cin >> int input_value;
+(b) int i = { 3.14 };
+(c) double salary = wage = 9999.99;
+(d) int i = 3.14;
+
+
+(a) std::cin >> int input_value;
+    must be decaled before cin attempts to assign value.
+    error: expected '(' for function-style cast or type construction
+(b) int i = { 3.14 };
+    using list initialization to assigning a float to an int is an warning due to loss of precision
+    warning: implicit conversion from 'double' to 'int' changes value from 3.14 to 3 [-Wliteral-conversion]  
+(c) double salary = wage = 9999.99;
+    attempting to assign wage to salary before wage is initialized 
+    error: use of undeclared identifier 'wage'
+(d) int i = 3.14;

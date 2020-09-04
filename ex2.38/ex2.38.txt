@@ -1,0 +1,13 @@
+Exercise 2.38: Describe the differences in type deduction between 
+decltype and auto. Give an example of an expression where auto and 
+decltype will deduce the same type and an example where 
+they will deduce differing types.
+
+
+auto assigns the variable the type returned by the rvalue expression
+decltype returns the type of the function passed to it.
+
+int i = 0;
+int* p = &i;
+auto a = p;
+decltype(p) b = p;

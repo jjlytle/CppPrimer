@@ -1,0 +1,12 @@
+Exercise 2.14: Is the following program legal? If so, what values are
+printed?
+
+int i = 100, 
+sum = 0;
+for (int i = 0; i != 10; ++i) 
+sum += i;
+std::cout << i << " " << sum << std::endl; 
+
+
+Answer: it is legal. the value printed are 100 45 as i the i that 
+was equal to 10 went out of scope and the global i variable is still in scope

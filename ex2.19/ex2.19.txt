@@ -1,0 +1,5 @@
+Exercise 2.19: Explain the key differences between pointers and references.
+
+references are not objects the don't have memory they are really just an alias to a variable
+
+a pointer is an object that stores the address of another object. that can be used through indirection.

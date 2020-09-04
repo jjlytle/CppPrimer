@@ -1,0 +1,11 @@
+Exercise 1.14: Compare and contrast the loops that used a for with those using a while. 
+Are there advantages or disadvantages to using either form?
+
+With a for loop the index update is know to happen at just before
+the conditional test.
+With the for loop the index has local scope. this could be an advantage or disadvantage.
+the while loop is more flexible on when the index is updated
+the for loop has all relevant information in the header so it could be easier to read
+when skimming code.
+it is easier to forget to update the index in a while loop with the effect
+that the conditional test always compares the same values.

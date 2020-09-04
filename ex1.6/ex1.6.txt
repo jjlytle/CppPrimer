@@ -1,0 +1,37 @@
+Exercise 1.6: Explain whether the following program fragment is legal.
+
+
+std::cout << "The sum of " << v1; << " and " << v2;
+<< " is " << v1 + v2 << std::endl;
+
+QUESTION;
+f the program is legal, what does it do? If the program is not legal, why not? How would you fix it?
+
+ANSWER:
+It is not legal the ';' after v1 and v2 break the code into multiple invalid statements;
+To fix remove the ;'s that break the statement up;
+
+ERROR:
+ex1.5.cpp:16:35: error: use of undeclared identifier
+      'v1'
+    std::cout << "The sum of " << v1; << " and ...
+                                  ^
+ex1.5.cpp:16:39: error: expected expression
+  ...<< "The sum of " << v1; << " and " << v2;
+                             ^
+ex1.5.cpp:16:53: error: use of undeclared identifier
+      'v2'
+  ...<< "The sum of " << v1; << " and " << v2;
+                                           ^
+ex1.5.cpp:17:1: error: expected expression
+<< " is " << v1 + v2 << std::endl;
+^
+ex1.5.cpp:17:14: error: use of undeclared identifier
+      'v1'
+<< " is " << v1 + v2 << std::endl;
+             ^
+ex1.5.cpp:17:19: error: use of undeclared identifier
+      'v2'
+<< " is " << v1 + v2 << std::endl;
+                  ^
+6 errors generated.

@@ -1,0 +1,16 @@
+Exercise 2.1: What are the differences between int, long, long long, and short? 
+Between an unsigned and a signed type? Between a float and a double?
+
+the difference between short int long, and long is the minimum number of bit used to represent
+the type in memory
+
+the difference between an unsigned an signed type is signed values can be positive and negative.
+where as unsigned values can only be positive, because a type is restricted to a certain number of bits
+signed types split the range evenly between positive and negative values. I.E 8 bit unsigned can represent
+the values 0 to 255 where signed usually represents -128 to 127. both ranges contain 255 distinct values.
+
+a float is a real number represented with single precision floating point 
+a double is a real number represented with double precision floating point.
+single and double precision floating point is just a way to represent real numbers
+using binary defined by IEEE x.x.x as a type is limited to a certain number of bits so 
+decimal precision can not be infinite like pi.

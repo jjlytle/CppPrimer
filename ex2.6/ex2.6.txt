@@ -1,0 +1,8 @@
+Exercise 2.6: What, if any, are the differences between the following
+definitions:
+
+int month = 9, day = 7; 
+int month = 09, day = 07;
+
+09 and 07 are using the octal prefix but 08 is the largest single digit octal number.
+and you would receive error: invalid digit '9' in octal constant at compile.

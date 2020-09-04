@@ -1,0 +1,17 @@
+Exercise 2.33: Using the variable definitions from this section, determine
+what happens in each of these assignments:
+
+a=42; 
+b=42; 
+c=42; 
+d=42; 
+e=42; 
+g=42;
+
+
+    a=42; //a is an int
+    b=42; //b is a int
+    c=42; //c is a int
+    d=42; //d is an int pointer so illegal assignment
+    e=42; // e is const int* so illegal assignment
+    g=42; //g is a const int reference that is bound  to ci can't be redefined

@@ -1,0 +1,11 @@
+Exercise 2.17: What does the following code print?
+int i, &ri = i;
+i = 5; ri = 10;
+std::cout << i << " " << ri << std::endl;
+
+10 10 as it is the same as 
+
+int i
+i=5
+i=10
+print i print i

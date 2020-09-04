@@ -1,0 +1,9 @@
+Exercise 2.25: Determine the types and values of each of the following
+variables.
+(a) int* ip, &r = ip; 
+(b) int i, *ip = 0; 
+(c) int* ip, ip2;
+
+(a) int* ip, &r = ip; r is a reference to a int pointer
+(b) int i, *ip = 0;  i is int declaration ip is dereferenced and what ip points to is assigned zero.
+(c) int* ip, ip2; ip is an int pointer and ip2 is a int, both a declarations

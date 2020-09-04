@@ -1,0 +1,14 @@
+Exercise 2.28: Explain the following definitions. Identify any that are illegal. 
+
+(a) int i, *const cp;
+(b) int *p1, *const p2;
+(c) const int ic, &r = ic; 
+(d) const int *const p3;
+(e) const int *p;
+
+
+(a) int i, *const cp; //illegal declaration of int i and a constant pointer to int needs to be initialized
+(b) int *p1, *const p2; //illegal declaration of a pointer to int ans a constant pointer to int needs to be initialized
+(c) const int ic, &r = ic; //illegal declaration to a constant int needs to be initialized and a reference to a constant int
+(d) const int *const p3; //illegal declaration of a constant pointer to a constant int needs to be initialized
+(e) const int *p; //declaration of a pointer to a constant int

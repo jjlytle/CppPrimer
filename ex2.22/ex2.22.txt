@@ -1,0 +1,8 @@
+Exercise 2.22: Assuming p is a pointer to int, explain the following code:
+if (p) // ... 
+if (*p) // ...
+
+
+if (p) is not nullptr i am true, i actually point to something. 
+if (*p) if i am not null and i am not pointing to zero i am true.
+        if i am null then i am a segmentation fault

@@ -1,0 +1,6 @@
+Exercise 2.12: Which, if any, of the following names are invalid? 
+(a) int double = 3.14; //invalid double is reserved
+(b) int _; //valid but terrible
+(c) int catch-22; //invalid can't use '-' character in identifiers
+(d) int 1_or_2 = 1; //invalid can't start with a number
+(e) double Double = 3.14; //valid but terrible as case sensitive Double is not reserved.

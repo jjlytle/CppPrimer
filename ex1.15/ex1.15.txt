@@ -1,0 +1,90 @@
+Exercise 1.15: Write programs that contain the 
+common errors discussed in the box on page 16.
+Familiarize yourself with the messages the compiler generates.
+
+// error 1: missing ) in parameter list for main 
+int main ( { 
+// error 2: used colon, not a semicolon, after endl
+std::cout << "Read each file." << std::endl: 
+// error 3: missing quotes around string literal
+std::cout << Update master. << std::endl;
+// error 4: second output operator is missing
+std::cout << "Write new master." std::endl; 
+// error 5: missing ; on return statement
+return 0 
+} 
+
+error1:
+
+ex1.1.cpp:4:1: error: main cannot be declared as global variable
+int main( {
+^
+ex1.1.cpp:4:11: error: expected expression
+int main( {
+          ^
+ex1.1.cpp:7:2: error: expected ';' after top level declarator
+}
+ ^
+ ;
+3 errors generated.
+make: *** [ex1.1] Error 1
+
+error 2:
+
+c++     ex1.1.cpp   -o ex1.1
+ex1.1.cpp:5:45: error: expected ';' after expression
+        std::cout << "Read each file." << std::endl:
+                                                   ^
+                                                   ;
+1 error generated.
+make: *** [ex1.1] Error 1
+
+error 3:
+
+ex1.1.cpp:5:21: error: expected ';' after expression
+        std::cout << Update master. << std::endl;
+                           ^
+                           ;
+ex1.1.cpp:5:15: error: use of undeclared identifier 'Update'
+        std::cout << Update master. << std::endl;
+                     ^
+ex1.1.cpp:5:22: error: use of undeclared identifier 'master'
+        std::cout << Update master. << std::endl;
+                            ^
+ex1.1.cpp:5:30: error: expected unqualified-id
+        std::cout << Update master. << std::endl;
+                                    ^
+4 errors generated.
+make: *** [ex1.1] Error 1
+
+error 4:
+
+c++     ex1.1.cpp   -o ex1.1
+ex1.1.cpp:5:34: error: expected ';' after expression
+        std::cout << "Write new master." std::endl;
+                                        ^
+                                        ;
+ex1.1.cpp:5:35: error: reference to overloaded function could not be resolved; did you mean to call it?
+        std::cout << "Write new master." std::endl;
+                                         ^~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:999:1: note: possible target for call
+endl(basic_ostream<_CharT, _Traits>& __os)
+^
+2 errors generated.
+make: *** [ex1.1] Error 1
+
+error 5:
+
+ex1.1.cpp:5:10: error: expected ';' after return statement
+        return 0
+                ^
+                ;
+1 error generated.
+make: *** [ex1.1] Error 1
+
+
+
+
+
+
+

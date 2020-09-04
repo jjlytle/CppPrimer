@@ -1,0 +1,9 @@
+Exercise 2.31: Given the declarations 
+in the previous exercise determine whether the following assignments are legal.
+Explain how the top-level or low-level const applies in each case.
+
+	r1 = v2; //legal vl is already assigned to v2 now again through reference
+    p1=p2; //a value of type "const int *" cannot be assigned to an entity of type "int *"
+    p2=p1; //fine int* can be converted to const int *
+    p1=p3; //a value of type "const int *" cannot be assigned to an entity of type "int *"
+    p2=p3; //points to const int assigned address of a const pointer that points to type const int 

@@ -1,0 +1,11 @@
+Exercise 2.26: Which of the following are legal? For those that are illegal,
+explain why.
+(a) const int buf;
+(b) int cnt = 0;
+(c) const int sz = cnt; (d) ++cnt; ++sz;
+
+(a) const int buf; defines a read-only int named buf
+(b) int cnt = 0; define an int called count and initializes it to 0.
+(c) const int sz = cnt; defines a read-only int sz and 
+    initializes it to zero by use of the cnt variable
+(d) ++cnt; ++sz; this is illegal as ++sz is attempting to write to the read=only variable sz.

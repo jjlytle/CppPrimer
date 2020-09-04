@@ -1,0 +1,6 @@
+Exercise 2.24: Why is the initialization of p legal but that of lp illegal?
+int i =42; void*p=&i; long*lp=&i;
+
+because the void pointers can hold addresses of any type
+where the long pointer can only hold address of long's
+but it is trying to be initialized with an int.

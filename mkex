@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mkdir $1
+cd $1
+touch $1.txt
+touch $1.cpp
+cp ../Makefile ./
+cp ../start.sh ./
+cp ../debug.sh ./
+code $1.txt
+code $1.cpp
+code Makefile

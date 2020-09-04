@@ -1,0 +1,8 @@
+Exercise 2.2: To calculate a mortgage payment, 
+what types would you use for the rate, principal, and payment? 
+Explain why you selected each type.
+
+
+double precision for all as it is typically the most efficient real number type.
+even though money is usually rounded to 2 decimal places. we can retain more precision in the calculation
+before rounding.

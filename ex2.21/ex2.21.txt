@@ -1,0 +1,8 @@
+Exercise 2.21: Explain each of the following definitions. 
+Indicate whether any are illegal and, if so, why.
+int i = 0;
+  
+(a) double* dp = &i;  a double pointer can't point to an int address.
+(b) int *ip = i; this would be a really crap way of doing a null pointer, but you can't initialize a 
+    int* with an int.
+(c) int *p = &i; this is the correct way to point to i.
